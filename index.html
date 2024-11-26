@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>SafeSync</title>
+</head>
+<body>
+    <header>
+        <h1>SafeSync - Sistema de Prevenção</h1>
+
+        <nav>
+            <a href="#about">Sobre</a>
+            <a href="#alerts">Alertas</a>
+            <a href="#contact">Contato</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Sobre O Sistema</h2>
+            <p>
+                Nosso sistema IoT monitora desastres naturais em tempo real, ajudando a prevenir deslizamentos, terremotos e outros eventos extremos em áreas urbanas e rurais. A tecnologia garante segurança e ações rápidas, protegendo vidas e patrimônios.
+            </p>
+            <img src="" alt="">
+        </section>
+
+        <section id="alerts">
+            <h2>ALertas em Tempo Real</h2>
+            <p>
+                Receba atualizações imediatas de sensores espalhados pelas áreas de risco. Nosso sistema informa o status atual e emite alertas para garantir a tomada de decisões rápidas e eficazes.
+            </p>
+        </section>
+
+        <section class="chart">
+            <h2>Dados de Monitoramento</h2>
+            <figcaption>
+                <img src="assets/img/alertas_desastres_mensal.png" alt="Gráfico Mensal de Acidentes">
+            </figcaption>
+        </section>
+
+        <section class="contact">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="message" placeholder="Sua mensagem" rows="6" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="form-response" class="hidden">Mnesagem enviada com sucesso !</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sistema IoT. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
