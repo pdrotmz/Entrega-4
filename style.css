@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 300px;
+    width: 30%;
 }
 
 .alert {
@@ -71,12 +71,9 @@ section {
 
 
 section.chart {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: flex;  
     align-items: center;
     text-align: center;
-    gap: 1.5rem;
 }
 
 section.chart figcaption {
@@ -86,11 +83,12 @@ section.chart figcaption {
 }
 
 section.chart img {
-    width: 850px;
+    width: 70%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 form input, form textarea, form button {
     width: 100%;
     margin: 10px 0;
