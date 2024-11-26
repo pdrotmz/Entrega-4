@@ -6,6 +6,44 @@ body {
     color: #333;
 }
 
+.alert-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+.alert {
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    animation: blink 1.5s infinite;
+}
+
+.green {
+    background-color: #28a745;
+}
+
+.yellow {
+    background-color: #ffc107;
+}
+
+.red {
+    background-color: #dc3545;
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0.5;
+    }
+}
+
 header {
     background: linear-gradient(to right, #1a73e8, #4285f4);
     color: white;
@@ -31,11 +69,14 @@ section {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+
 section.chart {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
+    gap: 1.5rem;
 }
 
 section.chart figcaption {
@@ -45,7 +86,7 @@ section.chart figcaption {
 }
 
 section.chart img {
-    max-width: 100%;
+    width: 850px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
