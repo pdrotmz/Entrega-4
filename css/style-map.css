@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: gray;
+    color: black;
+}
+
+header {
+    background: linear-gradient(to right, #1a73e8, #4285f4);
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-map > img {
+    padding: 20px;
+    width: 90%;
+}
