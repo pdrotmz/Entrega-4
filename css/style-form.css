@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: gray;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to bottom, gray, rgb(224, 224, 224));
 }
 
 .container {
@@ -11,6 +12,7 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+
 }
 
 h2 {
@@ -23,13 +25,20 @@ h2 {
     justify-content: center;
 }
 .logo > figcaption > img{
-    width: 40%;
+    width: 150px;
 }
 
 .cad-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: #edede9;
     padding: 50px;
     border-radius: 10px;
+    width: 300px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
 .form {
@@ -46,6 +55,14 @@ input {
     padding: 10px;
     border: solid 1px gray;
     border-radius: 5px;
+    margin-top: 5px;
+}
+
+select{
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
 a {

@@ -4,6 +4,7 @@ body {
     padding: 0;
     background: #f5f5f5;
     color: #333;
+    background-image: linear-gradient(to bottom, #f5f5f5, #fffdfd);
 }
 
 .alert-container {
@@ -59,6 +60,9 @@ nav a {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 section {
@@ -93,6 +97,7 @@ form input, form textarea, form button {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
+    padding-right: 0px;
     font-size: 1rem;
     border: 1px, solid #ccc;
     border-radius: 5px;

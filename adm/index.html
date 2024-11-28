@@ -5,19 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel ADM - SafeSync</title>
     <link rel="stylesheet" href="../css/style-adm.css">
+    <link rel="stylesheet" href="../css/style-sensor.css">
+    <link rel="stylesheet" href="../css/style-map.css">
 </head>
 <body>
     <header>
         <h1>Painel ADM - SafeSync</h1>
 
         <nav>
-            <a href="sensores.html">Sensores</a>
-            <a href="mapas.html">Mapas</a>
+            <a href="#maps">Mapas</a>
+            <a href="#sensor">Sensores</a>
             <a href="#contact">Contato</a>
         </nav>
     </header>
 
+    <section id="maps">
+        <div class="grid-container">
+            <h2>Mapas Estaduais em tempo real:</h2>
+            <figure>
+                <img src="/assets/img/estados/mapa-alagoas.png" alt="">
+                <img src="/assets/img/estados/mapa-ceara.png" alt="">
+                <img src="/assets/img/estados/mapa-mato-grosso.png" alt="">
+                <img src="/assets/img/estados/mapa-pernambuco.png" alt="">
+                <img src="/assets/img/estados/mapa-piaui.png" alt="">
+                <img src="/assets/img/estados/mapa-sergipe.png" alt="">
+            </figure>
+        </div>
+    </section>
 
-
+    <section id="sensor" class="sensor">
+        <h2>Sensores de monitoraento estaduais:</h2>
+        <div class="alert-container">
+            <div class="alert green">
+                <p><strong>São Paulo:</strong> Estável</p>
+            </div>
+            <div class="alert yellow">
+                <p><strong>Rio de Janeiro:</strong> Atenção</p>
+            </div>
+            <div class="alert red">
+                <p><strong>Curitiba:</strong> Perigo</p>
+            </div>
+            <div class="alert yellow">
+                <p><strong>Pernambuco:</strong> Atenção</p>
+            </div>
+            <div class="alert green">
+                <p><strong>Sergipe:</strong> Estável</p>
+            </div>
+            <div class="alert green">
+                <p><strong>Espirito Santo:</strong> Estável</p>
+            </div>
+            <div class="alert red">
+                <p><strong>Mato Grosso:</strong> Perigo</p>
+            </div>
+            <div class="alert yellow">
+                <p><strong>Minas Gerais:</strong> Atenção</p>
+            </div>
+            <div class="alert red">
+                <p><strong>Piauí:</strong> Perigo</p>
+            </div>
+            <div class="alert green">
+                <p><strong>Ceará:</strong> Estável</p>
+            </div>
+            <div class="alert yellow">
+                <p><strong>Santa Catarina:</strong> Atenção</p>
+            </div>
+            <div class="alert red">
+                <p><strong>Maranhão:</strong> Perigo</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Entre em Contato: </h2>
+        <form id="contact-form" class="contact-form">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="message" placeholder="Sua mensagem" rows="6" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>

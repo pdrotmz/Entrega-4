@@ -11,6 +11,7 @@ header {
     color: black;
     text-align: center;
     padding: 20px;
+    width: 100%;
 }
 
 nav a {
@@ -21,4 +22,43 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+    gap: 10px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.contact-form input, textarea{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px gray;
+}
+
+.contact-form button{
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px gray;
+    font-weight: 700;
+    width: 30vh;
+    margin: 0 auto;
+}
+
+.contact-form button:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    header{
+        width: 100vh;
+    }
 }

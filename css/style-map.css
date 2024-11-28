@@ -23,18 +23,32 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
 .grid-map {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.grid-map > img {
+figure img {
     padding: 20px;
-    width: 90%;
+    width: 60vh;
+}
+
+h2{
+    margin-left: 152px;
+    color: #000;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container h2{
+    padding-top: 50px;
 }
