@@ -24,41 +24,72 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
 }
 
-.contact-form{
+.contact-form {
     display: flex;
     flex-direction: column;
-    width: 80vh;
+    width: 60%;
+    max-width: 600px;
     gap: 10px;
     padding: 20px;
     margin: 0 auto;
 }
 
-.contact-form input, textarea{
+.contact-form input, textarea {
     padding: 10px;
     border-radius: 8px;
-    border: 1px gray;
+    border: 1px solid gray;
 }
 
-.contact-form button{
+.contact-form button {
     border-radius: 8px;
     padding: 10px;
-    border: 1px gray;
+    border: 1px solid gray;
     font-weight: 700;
-    width: 30vh;
+    width: 50%;
+    max-width: 200px;
     margin: 0 auto;
 }
 
-.contact-form button:hover{
+.contact-form button:hover {
     cursor: pointer;
 }
 
-@media (max-width: 1000px){
-    header{
-        width: 100vh;
+/* Responsividade */
+@media (max-width: 1000px) { /* Tablet */
+    header {
+        padding: 15px;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .contact-form button {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) { /* Mobile */
+    header {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .contact-form input, textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        width: 70%;
+        font-size: 0.9rem;
     }
 }

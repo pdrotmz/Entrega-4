@@ -12,7 +12,6 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-
 }
 
 h2 {
@@ -24,7 +23,8 @@ h2 {
     align-items: center;
     justify-content: center;
 }
-.logo > figcaption > img{
+
+.logo > figcaption > img {
     width: 150px;
 }
 
@@ -36,9 +36,9 @@ h2 {
     padding: 50px;
     border-radius: 10px;
     width: 300px;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .form {
@@ -51,14 +51,7 @@ label {
     margin-top: 20px;
 }
 
-input {
-    padding: 10px;
-    border: solid 1px gray;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-
-select{
+input, select {
     padding: 10px;
     border: solid 1px gray;
     border-radius: 5px;
@@ -84,4 +77,66 @@ button {
     background-color: #1a73e8;
     color: white;
     cursor: pointer;
+}
+
+/* Responsividade */
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .cad-form {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .logo > figcaption > img {
+        width: 120px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, select {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .cad-form {
+        width: 100%;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .logo > figcaption > img {
+        width: 100px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input, select {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
 }
